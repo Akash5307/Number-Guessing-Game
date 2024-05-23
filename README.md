@@ -1,4 +1,4 @@
-User input handling.
-Feedback on guesses (too low, too high, correct).
-Text is colored as per the requirements.
+User input handling.\n
+Feedback on guesses (too low, too high, correct).\n
+Text is colored as per the requirements.\n
 User input is validated.
