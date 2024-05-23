@@ -13,12 +13,14 @@ fn main() {
 
         let guess:u32=guess.trim().parse().expect("Please type a number");
         if guess==secret_num{
-            print!("{}"," !!! You Won !!! \n".green());
+            print!("{}"," !!! You Won !!! \n".green().bold());
             break;
         }else if guess<secret_num{
-            print!("{}","Number is too small (:*:)\n".red());
+            print!("{}","Number is too small ".red().italic());
+            print!("{}","(:*:)\n".yellow().bold());
         }else{
-            print!("{}","Number is too large (:*:)\n".red());
+            print!("{} {}","Number is too large ".red().italic(),"(:*:)\n".yellow().bold());
+            // print!("{}","(:*:)\n".yellow().bold());
         }
     }
 }
